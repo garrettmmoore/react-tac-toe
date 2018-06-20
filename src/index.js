@@ -4,15 +4,6 @@ import './index.css';
 
 // Square component
 class Square extends React.Component {
-  // constructor of the Square class to initialize the state
-  constructor(props) {
-    // explicitly call super(); when defining the constructor of a subclass
-    super(props);
-    this.state = {
-      value: null,
-    };
-  }
-
   render() {
     return (
       <button className="square" onClick={() => this.props.onClick()}>
