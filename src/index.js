@@ -132,7 +132,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// 
+// Helper function used to declare a winner
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
