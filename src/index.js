@@ -13,7 +13,6 @@ function Square(props) {
 
 // Board component
 class Board extends React.Component {
-  // Pass a value prop to Square
   renderSquare(i) {
     return (
       <Square
@@ -133,6 +132,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+// 
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
