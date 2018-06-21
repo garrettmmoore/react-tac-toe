@@ -62,6 +62,7 @@ class Game extends React.Component {
     const history = this.state.history;
     const current = history[history.length - 1];
     const squares = current.squares.slice();
+
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
@@ -85,7 +86,7 @@ class Game extends React.Component {
         'Go to game start';
 
       return (
-        <li>
+        <li key={move}>
           <button onClick={() => this.jumpTo(move)}>
             {desc}
           </button>
